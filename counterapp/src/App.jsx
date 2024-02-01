@@ -8,6 +8,11 @@
     // console.log("VAlue added", counter);
     // counter = counter + 1
     setCounter(counter + 1  )  
+        setCounter(counter + 1  )  
+    setCounter(counter + 1  )  
+    setCounter(counter + 1  )  
+    setCounter(counter + 1  )  
+
   }
   const removeVAlue = () => {
     setCounter(counter - 1)
