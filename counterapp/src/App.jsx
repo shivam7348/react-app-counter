@@ -1,21 +1,27 @@
-import { useState } from "react";
+ import { useState, } from "react";
+ 
+ function App() {
+    let [counter, setCounter]= useState(0)
+  // let counter = 15
 
-function App( ) {
-  const [count, setCount] = useState(0);
-  <div className="container my-5">
-    <div className="card">
-      <div className="card text-center my-5">
-        <h1>Couter App</h1>
-        <div className="my-5">
-          <h2 className="my-5">{count}</h2>
-          <button className="btn btn-success mx-3 onclick={}">Increment</button>
-          <button className="btn btn-danger mx-3">Decrement</button>
-            <button className="btn btn-secondary mx-3">Reset</button>
-        </div>
+  const addVAlue = () => {
+    // console.log("VAlue added", counter);
+    // counter = counter + 1
+    setCounter(counter + 1  )  
+  }
+  const removeVAlue = () => {
+    setCounter(counter - 1)
+  }
+  return (
+    <>
+    <h1>BAsic React.</h1>
+    <h2>Counter VAlue {counter}</h2>
 
-      </div>
-    </div>
-  </div>
-}
-
-export default App;
+    <button
+    onClick={addVAlue}> Add Value</button>
+    <br />
+    <button onClick={removeVAlue}>Remove Value</button>
+    </> 
+  )
+ }
+ export default App
